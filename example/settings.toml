@@ -1,0 +1,39 @@
+# To auto-connect to Wi-Fi
+CIRCUITPY_WIFI_SSID="<Your SSID>"
+CIRCUITPY_WIFI_PASSWORD="<Your Password>"
+CIRCUITPY_WEB_API_PORT=80
+CIRCUITPY_WEB_API_PASSWORD=<Your WEB_API_PASSWORD> # e.g.: "passw0rd"
+WIFI_IP="192.168.1.110" # IP address of your device
+WIFI_NETMASK="255.255.255.0"
+WIFI_GATEWAY="192.168.1.1"
+WIFI_DNS="8.8.8.8"
+ADAFRUIT_IO_USERNAME="<Your AIO Username>"
+ADAFRUIT_IO_KEY="<Your AIO key"
+github_token="<Your GitHub token>"
+hackaday_token="<Your hackaday token>"
+timezone="<Your time zone text>" # e.g.: "Europe/Lisbon" # http=//worldtimeapi.org/timezones
+tz_offset="<Your timezone offset in minutes> # e.g.: "3600"
+# timezone="America/New_York"
+# tz_offset="-14400"
+# timezone="America/Kentucky/Louisville"
+# tz_offset="-18000"
+DEBUG_FLAG="0"
+LOCAL_TIME_FLAG="1"
+NTP_LOCAL_FLAG= "1"
+NTP_LOCAL_URL=<Your NTP pool address> # e.g.: "pt.pool.ntp.org"
+AUTHOR1="<Your author text 1> # e.g.: "(c)2022 Paulus"
+AUTHOR2="<Your author sirname> # e.g.: "Schulinck"
+AUTHOR3="<Your author nickname> # e.g.: "@PaulskPt"
+HELP="0" # INSTEAD OF COMMANLINE OPTION - Boolean. Show Help or not
+MULTICAST_GROUP1="235.255.1.1"  # INSTEAD OF COMMANLINE OPTION
+MULTICAST_GROUP2="239.255.1.1" # was: 192.168.1.255"  # this works
+MULTICAST_PORT1="49707"  # was: 49002 INSTEAD OF COMMANDLINE OPTION
+MULTICAST_PORT2="49707"
+# XPlaneConnector see: https://github.com/MaxFerretti/XPlaneConnector
+XPLANECONNECTOR_IP="127.0.0.1" # or "192.168.1.96"
+XPLANECONNECTOR_PORT="49000"
+lDME="0" #  INSTEAD OF COMMANDLINE OPTION - Boolean. Display DME-3 frequency or not (Either lDME or lGROUNDSPEED has to be True)
+lGROUNDSPEED="1"  # INSTEAD OF COMMANDLINE OPTION - Boolean. Display GROUNDSPEED
+USE_UDP_HOST="1" # if "1": receive to device IP-address, port 49002. If "0" Receive udp packets to MULTICAST_GROUP "239.255.1.1", port 49707.
+PACKET_TYPES_USED="['XGPS']"   # or "['XGPS', 'XATT', 'XTRA']"
+XPLANE_VERSION="12"
